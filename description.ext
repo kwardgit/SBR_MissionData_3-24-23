@@ -1,0 +1,82 @@
+// GENERAL
+showMap = 1;
+zeusCompositionScriptLevel = 2;
+debriefing = 0;
+showGroupIndicator = 0;
+disabledAI    = 1;    // 0 = Fill with AI, 1 = Don't fill with AI.
+joinUnassigned   = 1;    // 0 = Join server assigned, 1 = Join unassigned.
+aiKills  = 0;
+disableChannels[] = {
+	{
+		0,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{
+		1,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{
+		2,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{
+		3,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{
+		4,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{
+		5,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+};
+enableDebugConsole  = 1;    // 0 = Disabled, 1 = Admins only, 2 = Everyone (Why is this even an option?).
+showGPS     = 0;   // 0 = Disable GPS, 1 = Enable GPS.
+showCompass    = 1;   // 0 = Disable compass, 1 = Enable compass.
+showWatch    = 1;   // 0 = Disable watch, 1 = Enable watch.
+
+class Header {
+ gameType    = Zeus;   // Game type
+ minPlayers    = 1;    // Min # of players the mission supports.
+ maxPlayers    = 20;    // Max # of players the mission supports.
+};
+
+// LOAD SCREEN
+author = "Saber Group";
+onLoadName = "Community Made Operation";
+onLoadMission = "A group of American citizens have been abducted by the Los Payaos cartel in the city of Kavala. Our mission is to gather information from the police station, inspect the evidence, and locate the hostages wherever they may be in the region. We cannot count on police assistance, as they are unable to fight the cartel without immediate retaliation. Time is of the essence, and we must act quickly to increase the chances of rescuing the hostages alive.";
+overviewText   = "Saber Group";
+loadScreen = "data\billboards\SBR_ClownsFirst.paa";
+overviewPicture = "data\billboards\SBR_ClownsFirst.paa";
+overviewTextLocked = "Locked! Contact admin for information.";
+onLoadIntroTime = 1;
+
+// RESPAWN
+respawn     = 3;   // 0 = None, 1 = Bird, 2 = Instant, 3 = Base, 4 = Group, 5 = Side.
+respawnDelay    = 5;      // Time in seconds to respawn.
+respawnDialog   = 1;   // 0 = Off, 1 = Score table on death.
+respawnOnStart   = -1;   // Start mission as if each player just respawned (Dialogs etc). 1 = TRUE, 0 = FALSE.
+respawnButton    = 1;   // Disables respawn button in menu?
+
+//HUD
+showHUD[] = {
+	1,	// Scripted HUD (same as showHUD command)
+	1,	// Vehicle and unit info
+	1,	// Vehicle radar [HIDDEN]
+	1,	// Vehicle compass [HIDDEN]
+	1,	// Tank direction indicator
+	1,	// Commanding menu
+	0,	// Group info bar
+	1,	// HUD weapon cursors
+	1,	// Vehicle display panels
+	0,	// "x killed by y" systemChat messages
+	0	// force show drawIcon3D icons
+};
